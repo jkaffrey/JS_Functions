@@ -93,9 +93,8 @@ function getStateIndividualSport(state) {
 // console.log('- 21 ::', getStateIndividualSport(21));
 
 function averageArray(arr) {
-
-  var sum = arr.reduce(function(a, b) { return a + b });
-  return sum / arr.length;
+  
+  return arr.reduce(function(a, b) { return a + b }) / arr.length;
 }
 
 console.log('Array Average: ', averageArray([2, 4, 6]), 'of array', [2, 4, 6]);
