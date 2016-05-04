@@ -40,5 +40,5 @@ function daysInMonth(month) {
 }
 
 console.log('April has: ', daysInMonth('april'), 'days.');
-console.log('NaN has: ', daysInMonth('NaN'));
+console.log('NaM has: ', daysInMonth('NaM'));
 console.log('OcToBeR has: ', daysInMonth('OcToBeR'), 'days.');
