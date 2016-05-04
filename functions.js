@@ -80,7 +80,7 @@ function getStateIndividualSport(state) {
   else if (state === 'Tennessee') {
     state = 'Golf';
   } else {
-    state = 'State not recognized or it has no official individual sport.'
+    state = 'State not recognized or it has no official individual sport.';
   }
 
   return state;
@@ -88,6 +88,6 @@ function getStateIndividualSport(state) {
 
 console.log('- Colorado ::', getStateIndividualSport('Colorado'));
 console.log('- California ::', getStateIndividualSport('California'));
-console.log('- AState ::', getStateIndividualSport('AState'))
+console.log('- AState ::', getStateIndividualSport('AState'));
 console.log('- New Hampshire ::', getStateIndividualSport('New Hampshire'));
 console.log('- 21 ::', getStateIndividualSport(21));
