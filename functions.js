@@ -34,7 +34,7 @@ var months = {
 
 function daysInMonth(month) {
 
-  if (typeof(month) !== 'string') return 'is not a string';
+  if (typeof(month) !== 'string') return 'not a string';
   month = month.toLowerCase();
   if (!months.hasOwnProperty(month)) return 'Not a month.';
   return months[month];
