@@ -34,6 +34,7 @@ var months = {
 
 function daysInMonth(month) {
 
+  if (typeof(month) !== 'string') return 'is not a string';
   month = month.toLowerCase();
   if (!months.hasOwnProperty(month)) return 'Not a month.';
   return months[month];
@@ -42,3 +43,4 @@ function daysInMonth(month) {
 console.log('April has: ', daysInMonth('april'), 'days.');
 console.log('NaM has: ', daysInMonth('NaM'));
 console.log('OcToBeR has: ', daysInMonth('OcToBeR'), 'days.');
+console.log('21 has: ', daysInMonth(21), 'days');
