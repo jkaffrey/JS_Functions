@@ -98,7 +98,7 @@ function averageArray(arr) {
   return sum / arr.length;
 }
 
-// console.log('Array Average: ', averageArray([2, 4, 6]));
+console.log('Array Average: ', averageArray([2, 4, 6]), 'of array', [2, 4, 6]);
 
 function calculate(num1, num2, conditional) {
 
@@ -120,4 +120,5 @@ function multi(num1, num2) {
   return num1 * num2;
 }
 
-console.log(calculate(1, 2, '+'));
+console.log('4+5=', calculate(4, 5, '+'));
+console.log('4*5=', calculate(4, 5, '*'));
