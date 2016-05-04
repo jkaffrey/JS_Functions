@@ -40,7 +40,52 @@ function daysInMonth(month) {
   return months[month];
 }
 
-console.log('April has: ', daysInMonth('april'), 'days.');
-console.log('NaM has: ', daysInMonth('NaM'));
-console.log('OcToBeR has: ', daysInMonth('OcToBeR'), 'days.');
-console.log('21 has: ', daysInMonth(21), 'days');
+// console.log('April has: ', daysInMonth('april'), 'days.');
+// console.log('NaM has: ', daysInMonth('NaM'));
+// console.log('OcToBeR has: ', daysInMonth('OcToBeR'), 'days.');
+// console.log('21 has: ', daysInMonth(21), 'days');
+
+function getStateIndividualSport(state) {
+
+  if (state === 'Alaska') {
+    state = 'Mushing';
+  }
+  else if (state === 'Colorado') {
+    state = 'Pack burro racing';
+  }
+  else if (state === 'Delaware') {
+    state = 'Bicycling';
+  }
+  else if (state === 'Hawaii') {
+    state = 'Surfing';
+  }
+  else if (state === 'Massachusetts') {
+    state = 'Basketball';
+  }
+  else if (state === 'Maryland') {
+    state = 'Jousting';
+  }
+  else if (state === 'Minnesota') {
+    state = 'Ice fishing';
+  }
+  else if (state === 'New Hampshire') {
+    state = 'Skiing';
+  }
+  else if (state === 'North Carolina') {
+    state = 'Stock car racing';
+  }
+  else if (state === 'South Dakota' || state === 'Texas' || state === 'Wyoming') {
+    state = 'Rodeo';
+  }
+  else if (state === 'Tennessee') {
+    state = 'Golf';
+  } else {
+    state = 'State not recognized or it has no official individual sport.'
+  }
+
+  return state;
+}
+
+console.log('- Colorado', getStateIndividualSport('Colorado'));
+console.log('- California', getStateIndividualSport('California'));
+console.log('- AState', getStateIndividualSport('AState'))
