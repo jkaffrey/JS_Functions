@@ -34,9 +34,11 @@ var months = {
 
 function daysInMonth(month) {
 
-  var index = month.indexOf(month.toLowerCase());
-  if (index < 0) return 'Not a month.';
-  return months[month.toLowerCase()];
+  month = month.toLowerCase();
+  if (!months.hasOwnProperty(month)) return 'Not a month.';
+  return months[month];
 }
 
-console.log(daysInMonth('april'));
+console.log('April has: ', daysInMonth('april'), 'days.');
+console.log('NaN has: ', daysInMonth('NaN'));
+console.log('October has: ', daysInMonth('OcToBeR'), 'days.');
