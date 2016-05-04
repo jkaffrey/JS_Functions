@@ -86,6 +86,8 @@ function getStateIndividualSport(state) {
   return state;
 }
 
-console.log('- Colorado', getStateIndividualSport('Colorado'));
-console.log('- California', getStateIndividualSport('California'));
-console.log('- AState', getStateIndividualSport('AState'))
+console.log('- Colorado ::', getStateIndividualSport('Colorado'));
+console.log('- California ::', getStateIndividualSport('California'));
+console.log('- AState ::', getStateIndividualSport('AState'))
+console.log('- New Hampshire ::', getStateIndividualSport('New Hampshire'));
+console.log('- 21 ::', getStateIndividualSport(21));
