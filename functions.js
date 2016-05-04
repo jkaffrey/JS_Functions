@@ -86,8 +86,38 @@ function getStateIndividualSport(state) {
   return state;
 }
 
-console.log('- Colorado ::', getStateIndividualSport('Colorado'));
-console.log('- California ::', getStateIndividualSport('California'));
-console.log('- AState ::', getStateIndividualSport('AState'));
-console.log('- New Hampshire ::', getStateIndividualSport('New Hampshire'));
-console.log('- 21 ::', getStateIndividualSport(21));
+// console.log('- Colorado ::', getStateIndividualSport('Colorado'));
+// console.log('- California ::', getStateIndividualSport('California'));
+// console.log('- AState ::', getStateIndividualSport('AState'));
+// console.log('- New Hampshire ::', getStateIndividualSport('New Hampshire'));
+// console.log('- 21 ::', getStateIndividualSport(21));
+
+function averageArray(arr) {
+
+  var sum = arr.reduce(function(a, b) { return a + b });
+  return sum / arr.length;
+}
+
+// console.log('Array Average: ', averageArray([2, 4, 6]));
+
+function calculate(num1, num2, conditional) {
+
+  if (conditional === '*')
+    return multi(num1, num2);
+  else if (conditional === '+')
+    return add(num1, num2);
+
+  return -1;
+}
+
+function add(num1, num2) {
+
+  return num1 + num2;
+}
+
+function multi(num1, num2) {
+
+  return num1 * num2;
+}
+
+console.log(calculate(1, 2, '+'));
